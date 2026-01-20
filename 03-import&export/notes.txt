@@ -1,0 +1,12 @@
+we have to syntax to use diff small modules
+1)=>required 
+2)=>import
+
+1)=>required
+now how we  work by require syntax see file 01 ;
+require=>in require it is of common js old syntax
+
+2) import method 
+in import method is of Es6+ and modern 
+for import we add type="modules" in json file 
+=>see file 02;
