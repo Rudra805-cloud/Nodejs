@@ -1,0 +1,26 @@
+file handling 
+=>create file and write data
+//create a file by synchronous method
+fs.writeFileSync("location of file ","content inside file")
+
+//Async..
+fs.writeFile("./notes1.txt","hellow there",(error)=>{})
+
+=>Read data from a file
+
+//sync=>return result
+const result=fs.readFileSync("./notes.txt","utf-8");
+console.log(result);
+
+//Asyn=>nothing return give a callback a error and result
+fs.readFile("./notes.txt","utf-8",(err,result)=>{
+    if(err){
+        console.log("error:",err);
+    }
+    else{
+        console.log(result);
+    }
+});
+
+//append file =>add data ,don't over write
+fs.appendFileSync("./notes.txt","hellow there")
