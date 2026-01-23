@@ -1,0 +1,4 @@
+//blocking code(sync or synchronous task) => here in synchronous the thread is blocked until the work get excuted so done task one by one  after thred do work them come to next task
+//non blocking code(asyn task)=>here its excute the task when its complete and if some other task then do parally and when the task done excute that also .
+{refer diagram} when ever request comes from user the request go in Eventqueue(fifo) and a Eventloop run countinusly one and check eventqueue and then if its of blocking code(sync) then its task go in thread pool and in thread pool start work based on thread avability and then return 
+and if its of non -blocking code type the code directcly excute dont block thread;
