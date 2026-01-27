@@ -1,0 +1,33 @@
+URL=>Uniform resource Locater
+https://www.youtube.com/watch?v=Nt-AsZh5woE
+  
+# HTTPS Protocol Documentation
+
+HTTPS (HyperText Transfer Protocol Secure) is the secure version of HTTP, the protocol used for transferring data across the web. It uses encryption (typically SSL/TLS) to protect data in transit between clients and servers.
+
+## Key Points
+
+- **Security**: Encrypts data to prevent interception and eavesdropping
+- **Authentication**: Verifies the identity of the website through digital certificates
+- **Data Integrity**: Ensures data hasn't been tampered with during transmission
+- **Port**: Uses port 443 by default (HTTP uses port 80)
+- **Certificate**: Requires an SSL/TLS certificate issued by a Certificate Authority
+
+## Usage in Node.js
+
+In Node.js, the `https` module is used to create secure servers and make secure requests to external APIs.
+
+//www.youtube.com/ ==> domain (contain ip address of sever unique name to easy to remember and recall)
+
+/watch => path
+ => endpoint (specific resource or action on the server)
+ => identifies which resource or page on the domain you're accessing
+ => comes after the domain name in the URL structure
+
+?v=Nt-AsZh5woE => query string (parameters passed to the server)
+  - ? => marks the start of query parameters
+  - v => parameter name (video id in this case)
+  - = => separator between key and value
+  - Nt-AsZh5woE => parameter value
+
+
