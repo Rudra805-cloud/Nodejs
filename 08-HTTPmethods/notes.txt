@@ -1,0 +1,27 @@
+const express = require('express');
+const app = express();
+
+app.use(express.json());
+
+// GET - when you want to get some data from server
+app.get('/users', (req, res) => {
+    res.json({ message: 'Get all users' });
+});
+
+// POST - whem we want to Send and add data to server
+app.post('/users', (req, res) => {
+    res.json({ message: 'Create new user', data: req.body });
+});
+
+// PUT - Replace entire resource(upload file image or resource)
+app.put('/users/:id', (req, res) => {
+    res.json({ message: `Update user ${req.params.id}`, data: req.body });
+});
+
+patch -change agsisting entry 
+
+DELETE - Remove data
+app.delete('/users/:id', (req, res) => {
+    res.json({ message: `Delete user ${req.params.id}` });
+});
+
