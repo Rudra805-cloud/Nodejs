@@ -1,0 +1,21 @@
+restfull api yaa rest api 
+Rest full api and rest api when we send our respospone(text,image,html doc,json,anything) to client form server
+
+client ->req----->server------>res->client
+
+client =>browser,app,mac app,anything,
+
+we send generaly two type of request 
+1)html res->Server side rendering (means rendering occure on server) cause less speed directly render on server and sow on browser 
+          ->But we send html res when we confirmed our client is browser
+
+2)json res->client side rendering( when rendering done by client side by us  like in react handel api) so this cause less speed
+          -> send req in json format and handel on frontend 
+          
+=>Always resepect http method 
+Get ,put ,post,patch,delete
+means assign work they have already
+
+=>html res in express                    =>same express handel in res 
+  res.send()                                 res.json()
+  res.render()
